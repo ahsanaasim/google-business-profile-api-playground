@@ -79,8 +79,6 @@ app.post('/add-location', async (req, res) => {
             requestId: uuidv4(),
             requestBody: {
 
-
-                // "name": "EVgo Charging Station",
                 "languageCode": "en",
                 // "storeCode": "EVG123",
                 "title": "6sense Station",
@@ -89,8 +87,7 @@ app.post('/add-location', async (req, res) => {
                 },
                 "categories": {
                     "primaryCategory": {
-                        "name": "gcid:electric_vehicle_charging_station",
-                        // "displayName": "Electric vehicle charging station",
+                        "name": "gcid:electric_vehicle_charging_station"
                     },
                 },
                 "storefrontAddress": {
@@ -136,7 +133,6 @@ app.post('/add-location', async (req, res) => {
                 // },
                 "labels": [
                     "EV Charging",
-                    "Charge OnSite",
                     "Fast Charging"
                 ],
                 "latlng": {
@@ -148,8 +144,6 @@ app.post('/add-location', async (req, res) => {
                 //     "canReopen": true
                 // },
                 // "metadata": {
-                //     "mapsUri": "https://maps.google.com/?q=EVgo+Charging+Station",
-                //     "newReviewUri": "https://maps.google.com/review?place_id=ChIJzxbB6Gs7bIcRZZrPTeyb-0A"
                 // },
                 "profile": {
                     "description": "Fast and reliable electric vehicle charging station."
